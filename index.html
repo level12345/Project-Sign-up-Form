@@ -3,9 +3,124 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
   <body>
+    <!-- <div class="header">My awesome website</div> -->
+    <div class="container">
+      <div class="img-holder">
+        <img
+          src="https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?q=80&w=1287&  auto=format&fit=crop&ixlib=rb-4.0.3&  ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        />
+        <div class="overlay">
+          <img
+            src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png"
+          />
+
+          ODIN
+        </div>
+      </div>
+      <div class="form-container">
+        <div class="form-header">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+          excepturi perferendis reiciendis temporibus. Nostrum dicta neque
+          placeat deleniti nesciunt! Quo ipsa commodi nemo ea distinctio!
+          Excepturi cupiditate reprehenderit inventore. Enim.
+          <br />
+          <br />
+          <br />
+          <br />
+          <div>You <i>know</i> you want to.</div>
+          <br />
+        </div>
+        <div class="form-input">
+          <form id="sign-up-form" action="#" method="post">
+            <h1>Let's do this!</h1>
+            <div class="input-flex">
+              <div class="form-alignment">
+                <label for="first_name"
+                  >FIRST NAME
+                  <input
+                    type="text"
+                    id="first_name"
+                    name="first_name"
+                    placeholder="Thor"
+                    required
+                  />
+                </label>
+              </div>
+              <div class="form-alignment">
+                <label for="last_name">LAST NAME</label>
+                <input type="text" id="last_name" name="last_name" required />
+              </div>
+            </div>
+            <div class="input-flex">
+              <div class="form-alignment">
+                <label for="user_email"
+                  >EMAIL:
+                  <input
+                    type="email"
+                    id="user_email"
+                    name="user_email"
+                    required
+                  />
+                </label>
+              </div>
+              <div class="form-alignment">
+                <label for="phone_number"
+                  >PHONE NUMBER:
+                  <input
+                    type="number"
+                    id="phone_number"
+                    name="phone_number"
+                    required
+                  />
+                </label>
+              </div>
+            </div>
+            <div class="input-flex">
+              <div class="form-alignment">
+                <label for="user_password"
+                  >PASSWORD:
+                  <input
+                    type="password"
+                    id="user_password"
+                    name="user_password"
+                    required
+                    style="border: 1px solid black"
+                  />
+                  <p
+                    class="password-warning"
+                    id="password-warning"
+                    style="display: none"
+                  >
+                    *Password do not match
+                  </p>
+                </label>
+              </div>
+              <div class="form-alignment">
+                <label for="confirmed_password"
+                  >CONFIRM PASSWORD:
+                  <input
+                    type="password"
+                    id="confirmed_password"
+                    name="confirmed_password"
+                    required
+                    style="border: 1px solid black"
+                  />
+                </label>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="form-footer">
+          <button class="button" type="submit">Create account</button>
+          Already have an account? <a href="#">Log in</a>
+        </div>
+      </div>
+    </div>
+
     <script src="javascript.js" defer></script>
   </body>
 </html>
